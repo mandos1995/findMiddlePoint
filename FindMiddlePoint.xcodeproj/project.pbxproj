@@ -14,6 +14,9 @@
 		EE90B083281687CB005E9A2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90B081281687CB005E9A2D /* Main.storyboard */; };
 		EE90B085281687CF005E9A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE90B084281687CF005E9A2D /* Assets.xcassets */; };
 		EE90B088281687CF005E9A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90B086281687CF005E9A2D /* LaunchScreen.storyboard */; };
+		EE90B09228168B33005E9A2D /* UIViewController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B09128168B33005E9A2D /* UIViewController.swift.swift */; };
+		EE90B09528168BB6005E9A2D /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B09428168BB6005E9A2D /* IndicatorView.swift */; };
+		EE90B09728168C01005E9A2D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B09628168C01005E9A2D /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		EE90B084281687CF005E9A2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE90B087281687CF005E9A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE90B089281687CF005E9A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE90B09128168B33005E9A2D /* UIViewController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift.swift; sourceTree = "<group>"; };
+		EE90B09428168BB6005E9A2D /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		EE90B09628168C01005E9A2D /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		F9C85541B039D2CFE1AC4831 /* Pods-FindMiddlePoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMiddlePoint.debug.xcconfig"; path = "Target Support Files/Pods-FindMiddlePoint/Pods-FindMiddlePoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +62,6 @@
 				F9C85541B039D2CFE1AC4831 /* Pods-FindMiddlePoint.debug.xcconfig */,
 				CFF7343A73B3A2AA10C34579 /* Pods-FindMiddlePoint.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,8 +93,35 @@
 				EE90B084281687CF005E9A2D /* Assets.xcassets */,
 				EE90B086281687CF005E9A2D /* LaunchScreen.storyboard */,
 				EE90B089281687CF005E9A2D /* Info.plist */,
+				EE90B08F28168B0E005E9A2D /* Util */,
 			);
 			path = FindMiddlePoint;
+			sourceTree = "<group>";
+		};
+		EE90B08F28168B0E005E9A2D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EE90B09328168BA5005E9A2D /* Custom */,
+				EE90B09028168B1B005E9A2D /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EE90B09028168B1B005E9A2D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EE90B09128168B33005E9A2D /* UIViewController.swift.swift */,
+				EE90B09628168C01005E9A2D /* UIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EE90B09328168BA5005E9A2D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				EE90B09428168BB6005E9A2D /* IndicatorView.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,8 +222,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE90B080281687CB005E9A2D /* ViewController.swift in Sources */,
+				EE90B09728168C01005E9A2D /* UIColor.swift in Sources */,
 				EE90B07C281687CB005E9A2D /* AppDelegate.swift in Sources */,
 				EE90B07E281687CB005E9A2D /* SceneDelegate.swift in Sources */,
+				EE90B09228168B33005E9A2D /* UIViewController.swift.swift in Sources */,
+				EE90B09528168BB6005E9A2D /* IndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +382,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,7 +395,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -376,8 +413,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,7 +426,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
