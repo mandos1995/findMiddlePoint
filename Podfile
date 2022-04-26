@@ -4,7 +4,8 @@
 target 'FindMiddlePoint' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  pod 'KakaoSDKAuth'
+  pod 'KakaoSDKUser'
   # Pods for FindMiddlePoint
 
 end
