@@ -19,6 +19,8 @@
 		EE90B09728168C01005E9A2D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B09628168C01005E9A2D /* UIColor.swift */; };
 		EE90B09C2817B08B005E9A2D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B09B2817B08B005E9A2D /* LoginViewController.swift */; };
 		EE90B09E2817B097005E9A2D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90B09D2817B097005E9A2D /* Login.storyboard */; };
+		EE90B0A428193BF7005E9A2D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90B0A328193BF7005E9A2D /* Home.storyboard */; };
+		EE90B0A628193C12005E9A2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B0A528193C12005E9A2D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		EE90B09628168C01005E9A2D /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		EE90B09B2817B08B005E9A2D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EE90B09D2817B097005E9A2D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		EE90B0A328193BF7005E9A2D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		EE90B0A528193C12005E9A2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F9C85541B039D2CFE1AC4831 /* Pods-FindMiddlePoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMiddlePoint.debug.xcconfig"; path = "Target Support Files/Pods-FindMiddlePoint/Pods-FindMiddlePoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +136,7 @@
 		EE90B0992817B024005E9A2D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				EE90B0A228193BE9005E9A2D /* Home */,
 				EE90B09A2817B07E005E9A2D /* Login */,
 			);
 			path = Source;
@@ -144,6 +149,15 @@
 				EE90B09D2817B097005E9A2D /* Login.storyboard */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		EE90B0A228193BE9005E9A2D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EE90B0A328193BF7005E9A2D /* Home.storyboard */,
+				EE90B0A528193C12005E9A2D /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE90B09E2817B097005E9A2D /* Login.storyboard in Resources */,
+				EE90B0A428193BF7005E9A2D /* Home.storyboard in Resources */,
 				EE90B088281687CF005E9A2D /* LaunchScreen.storyboard in Resources */,
 				EE90B085281687CF005E9A2D /* Assets.xcassets in Resources */,
 				EE90B083281687CB005E9A2D /* Main.storyboard in Resources */,
@@ -265,6 +280,7 @@
 				EE90B09C2817B08B005E9A2D /* LoginViewController.swift in Sources */,
 				EE90B080281687CB005E9A2D /* ViewController.swift in Sources */,
 				EE90B09728168C01005E9A2D /* UIColor.swift in Sources */,
+				EE90B0A628193C12005E9A2D /* HomeViewController.swift in Sources */,
 				EE90B07C281687CB005E9A2D /* AppDelegate.swift in Sources */,
 				EE90B07E281687CB005E9A2D /* SceneDelegate.swift in Sources */,
 				EE90B09228168B33005E9A2D /* UIViewController.swift.swift in Sources */,
