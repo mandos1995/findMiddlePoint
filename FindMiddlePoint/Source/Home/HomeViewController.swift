@@ -7,12 +7,12 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     var distanceList: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        transparentNavigationbar()
     }
     
 }
