@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5041B1C5B615FDBCFA0B2BE3 /* Pods_FindMiddlePoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247D511F4C60CFFDDE5F4320 /* Pods_FindMiddlePoint.framework */; };
+		EE7C8F43281A602700CE498B /* HomeEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F42281A602700CE498B /* HomeEmptyCell.swift */; };
+		EE7C8F45281A603600CE498B /* HomeDistanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F44281A603600CE498B /* HomeDistanceCell.swift */; };
+		EE7C8F47281A608B00CE498B /* HomeViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F46281A608B00CE498B /* HomeViewController + TableView.swift */; };
+		EE7C8F49281A644900CE498B /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F48281A644900CE498B /* LoginNavigationController.swift */; };
 		EE90B07C281687CB005E9A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B07B281687CB005E9A2D /* AppDelegate.swift */; };
 		EE90B07E281687CB005E9A2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B07D281687CB005E9A2D /* SceneDelegate.swift */; };
 		EE90B080281687CB005E9A2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B07F281687CB005E9A2D /* ViewController.swift */; };
@@ -26,6 +30,10 @@
 /* Begin PBXFileReference section */
 		247D511F4C60CFFDDE5F4320 /* Pods_FindMiddlePoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMiddlePoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF7343A73B3A2AA10C34579 /* Pods-FindMiddlePoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMiddlePoint.release.xcconfig"; path = "Target Support Files/Pods-FindMiddlePoint/Pods-FindMiddlePoint.release.xcconfig"; sourceTree = "<group>"; };
+		EE7C8F42281A602700CE498B /* HomeEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmptyCell.swift; sourceTree = "<group>"; };
+		EE7C8F44281A603600CE498B /* HomeDistanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDistanceCell.swift; sourceTree = "<group>"; };
+		EE7C8F46281A608B00CE498B /* HomeViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + TableView.swift"; sourceTree = "<group>"; };
+		EE7C8F48281A644900CE498B /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
 		EE90B078281687CB005E9A2D /* FindMiddlePoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMiddlePoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE90B07B281687CB005E9A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE90B07D281687CB005E9A2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +79,15 @@
 				CFF7343A73B3A2AA10C34579 /* Pods-FindMiddlePoint.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE7C8F41281A5FFB00CE498B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE7C8F42281A602700CE498B /* HomeEmptyCell.swift */,
+				EE7C8F44281A603600CE498B /* HomeDistanceCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		EE90B06F281687CB005E9A2D = {
@@ -147,6 +164,7 @@
 			children = (
 				EE90B09B2817B08B005E9A2D /* LoginViewController.swift */,
 				EE90B09D2817B097005E9A2D /* Login.storyboard */,
+				EE7C8F48281A644900CE498B /* LoginNavigationController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -154,8 +172,10 @@
 		EE90B0A228193BE9005E9A2D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EE7C8F41281A5FFB00CE498B /* Cell */,
 				EE90B0A328193BF7005E9A2D /* Home.storyboard */,
 				EE90B0A528193C12005E9A2D /* HomeViewController.swift */,
+				EE7C8F46281A608B00CE498B /* HomeViewController + TableView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -280,10 +300,14 @@
 				EE90B09C2817B08B005E9A2D /* LoginViewController.swift in Sources */,
 				EE90B080281687CB005E9A2D /* ViewController.swift in Sources */,
 				EE90B09728168C01005E9A2D /* UIColor.swift in Sources */,
+				EE7C8F45281A603600CE498B /* HomeDistanceCell.swift in Sources */,
 				EE90B0A628193C12005E9A2D /* HomeViewController.swift in Sources */,
+				EE7C8F43281A602700CE498B /* HomeEmptyCell.swift in Sources */,
 				EE90B07C281687CB005E9A2D /* AppDelegate.swift in Sources */,
 				EE90B07E281687CB005E9A2D /* SceneDelegate.swift in Sources */,
+				EE7C8F47281A608B00CE498B /* HomeViewController + TableView.swift in Sources */,
 				EE90B09228168B33005E9A2D /* UIViewController.swift.swift in Sources */,
+				EE7C8F49281A644900CE498B /* LoginNavigationController.swift in Sources */,
 				EE90B09528168BB6005E9A2D /* IndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
