@@ -6,6 +6,7 @@ target 'FindMiddlePoint' do
   use_frameworks!
   pod 'KakaoSDKAuth'
   pod 'KakaoSDKUser'
+  pod 'SnapKit', '~> 5.6.0'
   # Pods for FindMiddlePoint
 
 end
