@@ -38,6 +38,8 @@ class LoginViewController: UIViewController {
                     //do something
                     _ = oauthToken
                     // print("oauthToken: \(oauthToken)")
+                    Constants.isLogin = true
+                    self.performSegue(withIdentifier: "goToHomeSegue", sender: nil)
                 }
             }
         }

@@ -70,7 +70,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="HJK-Qu-z9v" kind="show" identifier="" id="s7a-a8-uJD"/>
+                                    <segue destination="HJK-Qu-z9v" kind="show" identifier="goToHomeSegue" id="s7a-a8-uJD"/>
                                 </connections>
                             </button>
                         </subviews>

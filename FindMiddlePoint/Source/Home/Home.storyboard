@@ -27,38 +27,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fuN-IP-wjH" id="b3u-lN-3RH">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKF-nh-e6k">
-                                                    <rect key="frame" x="20" y="10" width="374" height="50"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="e8b-z3-0fC">
-                                                            <rect key="frame" x="101" y="13" width="172.5" height="24"/>
-                                                            <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" ambiguous="YES" image="icEmptyDistance" translatesAutoresizingMaskIntoConstraints="NO" id="PpQ-xv-965">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
-                                                                </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="추가한 거리가 없어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C14-pz-dXX">
-                                                                    <rect key="frame" x="31" y="0.0" width="141.5" height="24"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstItem="e8b-z3-0fC" firstAttribute="centerY" secondItem="lKF-nh-e6k" secondAttribute="centerY" id="7sE-ak-gEE"/>
-                                                        <constraint firstItem="e8b-z3-0fC" firstAttribute="centerX" secondItem="lKF-nh-e6k" secondAttribute="centerX" id="i1f-I8-4vD"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="lKF-nh-e6k" secondAttribute="trailing" constant="20" id="7dN-Xv-rYh"/>
-                                                <constraint firstItem="lKF-nh-e6k" firstAttribute="leading" secondItem="b3u-lN-3RH" secondAttribute="leading" constant="20" id="JpR-hC-Ib5"/>
-                                                <constraint firstItem="lKF-nh-e6k" firstAttribute="top" secondItem="b3u-lN-3RH" secondAttribute="top" constant="10" id="MJU-BH-uvf"/>
-                                                <constraint firstAttribute="bottom" secondItem="lKF-nh-e6k" secondAttribute="bottom" constant="10" id="RM8-Cb-JuZ"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeDistanceCell" rowHeight="114" id="Vx3-Bo-mIJ" customClass="HomeDistanceCell" customModule="FindMiddlePoint" customModuleProvider="target">
@@ -146,15 +114,49 @@
                     <navigationItem key="navigationItem" title="홈" id="3M1-SH-1mA">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="icSetting" id="Inf-a5-O8f">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="settingButtonTapped:" destination="Y6W-OH-hqX" id="NV3-Sk-Bmy"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Ne1-aY-GhV" id="PNx-An-JJu"/>
+                        <segue destination="iLD-hZ-gUW" kind="show" identifier="settingButtonSegue" id="b7F-zT-tMd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="41.517857142857139"/>
+        </scene>
+        <!--설정-->
+        <scene sceneID="G1i-RN-lQl">
+            <objects>
+                <viewController id="iLD-hZ-gUW" customClass="SettingViewController" customModule="FindMiddlePoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eML-fk-BI2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzt-pI-TMU">
+                                <rect key="frame" x="170.5" y="432.5" width="73" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그아웃"/>
+                                <connections>
+                                    <action selector="logoutButtonTouchUpInside:" destination="iLD-hZ-gUW" eventType="touchUpInside" id="jDe-Oe-7op"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LKl-jR-V3Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tzt-pI-TMU" firstAttribute="centerX" secondItem="eML-fk-BI2" secondAttribute="centerX" id="5ZF-fx-q62"/>
+                            <constraint firstItem="Tzt-pI-TMU" firstAttribute="centerY" secondItem="eML-fk-BI2" secondAttribute="centerY" id="WH7-9P-uBq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="설정" id="ytB-dr-PeD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hBZ-u6-zMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="42"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="li6-H3-WOq">
@@ -176,7 +178,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icEmptyDistance" width="24" height="24"/>
         <image name="icSetting" width="32" height="32"/>
         <image name="icUserName" width="24" height="24"/>
         <image name="iclocation" width="24" height="24"/>

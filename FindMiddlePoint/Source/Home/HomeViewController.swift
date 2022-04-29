@@ -19,5 +19,12 @@ class HomeViewController: BaseViewController {
             self.distanceList.append(text)
         }
     }
+    @IBAction func settingButtonTapped(_ sender: UIBarButtonItem) {
+        if Constants.isLogin {
+            performSegue(withIdentifier: "settingButtonSegue", sender: nil)
+        } else {
+            // 로그인 해주세요
+        }
+    }
     
 }
