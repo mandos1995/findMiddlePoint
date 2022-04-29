@@ -32,6 +32,8 @@
 		EEF5852A281BC4A000AA71D0 /* BasePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF58529281BC4A000AA71D0 /* BasePopUpViewController.swift */; };
 		EEF58530281BD25C00AA71D0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5852F281BD25C00AA71D0 /* SettingViewController.swift */; };
 		EEF58532281BD27B00AA71D0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF58531281BD27B00AA71D0 /* Constants.swift */; };
+		EEF58536281BE17A00AA71D0 /* AddressWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF58534281BE17A00AA71D0 /* AddressWebViewController.swift */; };
+		EEF58537281BE17A00AA71D0 /* AddressWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF58535281BE17A00AA71D0 /* AddressWebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		EEF58529281BC4A000AA71D0 /* BasePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePopUpViewController.swift; sourceTree = "<group>"; };
 		EEF5852F281BD25C00AA71D0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EEF58531281BD27B00AA71D0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EEF58534281BE17A00AA71D0 /* AddressWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressWebViewController.swift; sourceTree = "<group>"; };
+		EEF58535281BE17A00AA71D0 /* AddressWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressWebViewController.xib; sourceTree = "<group>"; };
 		F9C85541B039D2CFE1AC4831 /* Pods-FindMiddlePoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMiddlePoint.debug.xcconfig"; path = "Target Support Files/Pods-FindMiddlePoint/Pods-FindMiddlePoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +206,7 @@
 		EE90B08F28168B0E005E9A2D /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				EEF58533281BE16100AA71D0 /* Web */,
 				EE7C8F4C281AD18400CE498B /* PopUp */,
 				EE90B09328168BA5005E9A2D /* Custom */,
 				EE90B09028168B1B005E9A2D /* Extension */,
@@ -255,6 +260,15 @@
 				EEF5852F281BD25C00AA71D0 /* SettingViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		EEF58533281BE16100AA71D0 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				EEF58534281BE17A00AA71D0 /* AddressWebViewController.swift */,
+				EEF58535281BE17A00AA71D0 /* AddressWebViewController.xib */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +333,7 @@
 			files = (
 				EE90B09E2817B097005E9A2D /* Login.storyboard in Resources */,
 				EE90B0A428193BF7005E9A2D /* Home.storyboard in Resources */,
+				EEF58537281BE17A00AA71D0 /* AddressWebViewController.xib in Resources */,
 				EE90B088281687CF005E9A2D /* LaunchScreen.storyboard in Resources */,
 				EE7C8F5A281AD73B00CE498B /* DistanceInputPopUpViewController.xib in Resources */,
 				EE90B085281687CF005E9A2D /* Assets.xcassets in Resources */,
@@ -375,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF58536281BE17A00AA71D0 /* AddressWebViewController.swift in Sources */,
 				EE90B09C2817B08B005E9A2D /* LoginViewController.swift in Sources */,
 				EE90B080281687CB005E9A2D /* ViewController.swift in Sources */,
 				EE90B09728168C01005E9A2D /* UIColor.swift in Sources */,

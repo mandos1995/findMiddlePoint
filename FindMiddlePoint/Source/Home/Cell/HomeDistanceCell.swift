@@ -8,7 +8,13 @@
 import UIKit
 
 class HomeDistanceCell: UITableViewCell {
-
+    @IBOutlet weak var view: UIView! {
+        didSet {
+            view.layer.cornerRadius = 8
+            view.layer.borderColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1.0).cgColor
+            view.layer.borderWidth = 1.0
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

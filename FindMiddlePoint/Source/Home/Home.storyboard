@@ -17,20 +17,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ne1-aY-GhV">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="20" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ne1-aY-GhV">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="2Vc-uL-t7R">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeEmptyCell" rowHeight="70" id="fuN-IP-wjH" customClass="HomeEmptyCell" customModule="FindMiddlePoint" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="70"/>
+                                        <rect key="frame" x="0.0" y="64.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fuN-IP-wjH" id="b3u-lN-3RH">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6KR-p9-jGw">
+                                                    <rect key="frame" x="20" y="10" width="374" height="50"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소를 추가해 주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h5-Y5-UZV">
+                                                            <rect key="frame" x="114" y="15" width="146" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="5h5-Y5-UZV" firstAttribute="centerX" secondItem="6KR-p9-jGw" secondAttribute="centerX" id="BMh-cm-T1n"/>
+                                                        <constraint firstItem="5h5-Y5-UZV" firstAttribute="centerY" secondItem="6KR-p9-jGw" secondAttribute="centerY" id="JAv-Ur-FGG"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6KR-p9-jGw" firstAttribute="top" secondItem="b3u-lN-3RH" secondAttribute="top" constant="10" id="3au-lv-rjS"/>
+                                                <constraint firstAttribute="trailing" secondItem="6KR-p9-jGw" secondAttribute="trailing" constant="20" id="Lek-G8-iqb"/>
+                                                <constraint firstItem="6KR-p9-jGw" firstAttribute="leading" secondItem="b3u-lN-3RH" secondAttribute="leading" constant="20" id="cgm-Uc-nb8"/>
+                                                <constraint firstAttribute="bottom" secondItem="6KR-p9-jGw" secondAttribute="bottom" constant="10" id="d70-Fh-tkb"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="view" destination="6KR-p9-jGw" id="vad-5z-stp"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeDistanceCell" rowHeight="114" id="Vx3-Bo-mIJ" customClass="HomeDistanceCell" customModule="FindMiddlePoint" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="114.5" width="414" height="114"/>
+                                        <rect key="frame" x="0.0" y="134.5" width="414" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vx3-Bo-mIJ" id="tAz-HQ-LKA">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
@@ -84,12 +116,11 @@
                                                 <constraint firstItem="cZZ-qY-EBR" firstAttribute="leading" secondItem="tAz-HQ-LKA" secondAttribute="leading" constant="20" id="OhH-sZ-qrg"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="view" destination="cZZ-qY-EBR" id="ReN-ZC-6DH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="QKB-u6-Yup"/>
-                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="fSy-BO-faG"/>
-                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maG-Md-Uo0">
                                 <rect key="frame" x="330" y="758" width="64" height="64"/>
@@ -156,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBZ-u6-zMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="42"/>
+            <point key="canvasLocation" x="1820" y="437"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="li6-H3-WOq">

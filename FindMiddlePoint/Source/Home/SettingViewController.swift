@@ -11,7 +11,6 @@ import KakaoSDKAuth
 import KakaoSDKUser
 
 class SettingViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

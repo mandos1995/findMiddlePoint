@@ -20,17 +20,26 @@ class DistanceInputPopUpViewController: BasePopUpViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(addressWrite(_:)), name: Notification.Name("addressInput"), object: nil)
     }
     private let completion: ((String) -> Void)
     var nameText: String
     var addressText: String
+    @IBOutlet weak var addressLabel: UILabel! {
+        didSet {
+            addressLabel.text = addressText
+        }
+    }
     @IBOutlet weak var nameTextField: UITextField! {
         didSet {
             nameTextField.delegate = self
             nameTextField.text = nameText
         }
+    }
+    @IBAction func searchButtonTouchUpInside(_ sender: UIButton) {
+        let webVC = AddressWebViewController()
+        webVC.modalPresentationStyle = .overFullScreen
+        present(webVC, animated: true)
     }
     
     @IBAction func confirmButtonTouchUpInside(_ sender: UIButton) {
@@ -40,7 +49,12 @@ class DistanceInputPopUpViewController: BasePopUpViewController {
                 self.delegate?.fadeOut()
             }
         }
-        
+    }
+    @objc func addressWrite(_ notification: Notification) {
+        if let address = notification.object as? String {
+            addressText = address
+            addressLabel.text = addressText
+        }
     }
 }
 extension DistanceInputPopUpViewController: UITextFieldDelegate {

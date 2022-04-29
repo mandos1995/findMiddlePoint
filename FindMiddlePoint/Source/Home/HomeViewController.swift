@@ -8,7 +8,12 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.delegate = self
+            tableView.dataSource = self
+        }
+    }
     var distanceList: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
