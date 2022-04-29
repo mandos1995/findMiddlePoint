@@ -7,23 +7,42 @@
 
 import UIKit
 
-class DistanceInputPopUpViewController: UIViewController {
-
+class DistanceInputPopUpViewController: BasePopUpViewController {
+    init(delegate: BasePopUpDelegate, completion: @escaping ((String) -> Void)) {
+        self.completion = completion
+        nameText = ""
+        addressText = ""
+        super.init(nibName: "DistanceInputPopUpViewController", delegate: delegate)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private let completion: ((String) -> Void)
+    var nameText: String
+    var addressText: String
+    @IBOutlet weak var nameTextField: UITextField! {
+        didSet {
+            nameTextField.delegate = self
+            nameTextField.text = nameText
+        }
     }
-    */
-
+    
+    @IBAction func confirmButtonTouchUpInside(_ sender: UIButton) {
+        if let text = nameTextField.text {
+            dismiss(animated: false) {
+                self.completion(text)
+                self.delegate?.fadeOut()
+            }
+        }
+        
+    }
+}
+extension DistanceInputPopUpViewController: UITextFieldDelegate {
+    
 }

@@ -14,5 +14,10 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         transparentNavigationbar()
     }
+    @IBAction func addDistanceButtonTouchUpInside(_ sender: UIButton) {
+        presentDistanceInputPopUp { text in
+            self.distanceList.append(text)
+        }
+    }
     
 }

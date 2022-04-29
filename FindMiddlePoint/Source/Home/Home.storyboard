@@ -127,6 +127,9 @@
                                 <rect key="frame" x="330" y="758" width="64" height="64"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="iclocationAdd"/>
+                                <connections>
+                                    <action selector="addDistanceButtonTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fcO-Fy-lja"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

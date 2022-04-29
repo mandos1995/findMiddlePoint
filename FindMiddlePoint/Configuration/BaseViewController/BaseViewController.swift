@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SnapKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, BasePopUpDelegate {
     
     // Fade in/out 사용을 위한 뷰
     let darkView: UIView = {
@@ -28,6 +29,38 @@ class BaseViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
     }
-
+    
+    func presentDistanceInputPopUp(completion: @escaping ((String) -> Void)) {
+        let popUpViewController = DistanceInputPopUpViewController(delegate: self, completion: completion)
+        popUpViewController.modalPresentationStyle = .overFullScreen
+        present(popUpViewController, animated: false)
+    }
+    
+    func fadeIn() {
+        view.addSubview(darkView)
+        navigationController?.navigationBar.addSubview(darkView)
+        navigationController?.view.addSubview(darkView)
+        tabBarController?.view.addSubview(darkView)
+        darkView.snp.makeConstraints { $0.edges.equalToSuperview() }
+        
+        UIView.animateKeyframes(
+            withDuration: 0.2,
+            delay: 0,
+            options: .calculationModeLinear,
+            animations: { self.darkView.alpha = 0.3 },
+            completion: nil
+        )
+    }
+    
+    func fadeOut() {
+        UIView.animateKeyframes(
+            withDuration: 0.3,
+            delay: 0,
+            options: .calculationModeLinear,
+            animations: { self.darkView.alpha = 0 },
+            completion: { _ in self.darkView.removeFromSuperview() }
+        )
+    }
+    
 
 }

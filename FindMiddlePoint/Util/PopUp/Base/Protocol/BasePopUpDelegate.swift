@@ -6,5 +6,6 @@
 //
 
 protocol BasePopUpDelegate {
-    
+    func fadeIn()
+    func fadeOut()
 }
