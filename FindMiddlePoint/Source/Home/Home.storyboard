@@ -134,6 +134,7 @@
                                 <state key="normal" title="거리 계산하기"/>
                                 <connections>
                                     <action selector="confirmButtonTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KYR-xc-L7G"/>
+                                    <segue destination="XQd-Pf-UHS" kind="show" id="WNx-Lp-q4H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maG-Md-Uo0">
@@ -176,6 +177,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="41.517857142857139"/>
+        </scene>
+        <!--MainStoryBoard-->
+        <scene sceneID="jhU-2b-Gtv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MainStoryBoard" id="XQd-Pf-UHS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iG8-SF-sOX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRa-CQ-gh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="-191"/>
         </scene>
         <!--설정-->
         <scene sceneID="G1i-RN-lQl">
