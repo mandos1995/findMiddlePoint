@@ -117,13 +117,27 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="addressLabel" destination="url-ed-8cm" id="qdM-bk-gT8"/>
+                                            <outlet property="nameLabel" destination="ejG-qP-da3" id="U6m-ic-HAw"/>
                                             <outlet property="view" destination="cZZ-qY-EBR" id="ReN-ZC-6DH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKg-bi-7fT">
+                                <rect key="frame" x="20" y="794" width="374" height="48"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="kMy-eU-qRg"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="거리 계산하기"/>
+                                <connections>
+                                    <action selector="confirmButtonTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KYR-xc-L7G"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maG-Md-Uo0">
-                                <rect key="frame" x="330" y="758" width="64" height="64"/>
+                                <rect key="frame" x="330" y="715" width="64" height="64"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="iclocationAdd"/>
                                 <connections>
@@ -134,11 +148,14 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="tKg-bi-7fT" firstAttribute="leading" secondItem="Ne1-aY-GhV" secondAttribute="leading" constant="20" id="45v-ol-7pA"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Ne1-aY-GhV" secondAttribute="bottom" id="DGP-AV-fAz"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="maG-Md-Uo0" secondAttribute="bottom" constant="40" id="N7A-uQ-re1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tKg-bi-7fT" secondAttribute="bottom" constant="20" id="E7q-hq-oGF"/>
                             <constraint firstItem="Ne1-aY-GhV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Nfn-cb-yWa"/>
                             <constraint firstItem="Ne1-aY-GhV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="V71-Wi-mjg"/>
+                            <constraint firstItem="maG-Md-Uo0" firstAttribute="bottom" secondItem="tKg-bi-7fT" secondAttribute="top" constant="-15" id="Z7e-VJ-lkl"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="maG-Md-Uo0" secondAttribute="trailing" constant="20" id="aQc-sU-gv7"/>
+                            <constraint firstItem="tKg-bi-7fT" firstAttribute="trailing" secondItem="Ne1-aY-GhV" secondAttribute="trailing" constant="-20" id="f2O-MH-l3e"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ne1-aY-GhV" secondAttribute="trailing" id="ocd-fs-Orr"/>
                         </constraints>
                     </view>
@@ -151,6 +168,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="confirmButton" destination="tKg-bi-7fT" id="9NE-sA-lO8"/>
                         <outlet property="tableView" destination="Ne1-aY-GhV" id="PNx-An-JJu"/>
                         <segue destination="iLD-hZ-gUW" kind="show" identifier="settingButtonSegue" id="b7F-zT-tMd"/>
                     </connections>
@@ -215,6 +233,9 @@
         <image name="iclocationAdd" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -30,7 +30,7 @@ class BaseViewController: UIViewController, BasePopUpDelegate {
         self.navigationController?.view.backgroundColor = .clear
     }
     
-    func presentDistanceInputPopUp(completion: @escaping ((String) -> Void)) {
+    func presentDistanceInputPopUp(completion: @escaping ((String, String) -> Void)) {
         let popUpViewController = DistanceInputPopUpViewController(delegate: self, completion: completion)
         popUpViewController.modalPresentationStyle = .overFullScreen
         present(popUpViewController, animated: false)

@@ -14,21 +14,43 @@ class HomeViewController: BaseViewController {
             tableView.dataSource = self
         }
     }
-    var distanceList: [String] = []
+    var distanceList: [User] = []
+    @IBOutlet weak var confirmButton: UIButton! {
+        didSet {
+            confirmButton.layer.cornerRadius = 8
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         transparentNavigationbar()
+        buttonSetting()
     }
     @IBAction func addDistanceButtonTouchUpInside(_ sender: UIButton) {
-        presentDistanceInputPopUp { text in
-            self.distanceList.append(text)
+        presentDistanceInputPopUp { name, address in
+            let user = User(name: name, address: address)
+            self.distanceList.append(user)
+            self.buttonSetting()
+            self.tableView.reloadData()
         }
+    }
+    @IBAction func confirmButtonTouchUpInside(_ sender: UIButton) {
+        
     }
     @IBAction func settingButtonTapped(_ sender: UIBarButtonItem) {
         if Constants.isLogin {
             performSegue(withIdentifier: "settingButtonSegue", sender: nil)
         } else {
             // 로그인 해주세요
+        }
+    }
+    func buttonSetting() {
+        if distanceList.count > 1 {
+            confirmButton.isEnabled = true
+            confirmButton.backgroundColor = .systemIndigo
+        } else {
+            confirmButton.isEnabled = false
+            confirmButton.backgroundColor = .gray
         }
     }
     

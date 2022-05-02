@@ -15,6 +15,8 @@ class HomeDistanceCell: UITableViewCell {
             view.layer.borderWidth = 1.0
         }
     }
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,6 +26,11 @@ class HomeDistanceCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setUI(name: String, address: String) {
+        nameLabel.text = name
+        addressLabel.text = address
     }
 
 }

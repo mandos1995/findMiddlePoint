@@ -12,7 +12,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DistanceInputPopUpViewController" customModule="FindMiddlePoint" customModuleProvider="target">
             <connections>
                 <outlet property="addressLabel" destination="3nT-yn-HR5" id="PFx-lI-0gD"/>
+                <outlet property="addressView" destination="BOK-f7-dpS" id="PLj-WU-zFp"/>
+                <outlet property="confirmButton" destination="Vx2-8j-d9h" id="Bdq-2B-Kte"/>
                 <outlet property="nameTextField" destination="qgD-8U-sXO" id="8JA-W0-4Tz"/>
+                <outlet property="nameView" destination="Or4-Tk-laJ" id="o1d-IU-E2V"/>
+                <outlet property="popUpView" destination="ygg-fZ-scx" id="z6j-gf-gLv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -38,23 +42,23 @@
                                 </label>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="l8c-cg-jgF">
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="l8c-cg-jgF">
                             <rect key="frame" x="20" y="67.5" width="300" height="30"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icName" translatesAutoresizingMaskIntoConstraints="NO" id="hPA-GN-gbG">
                                     <rect key="frame" x="0.0" y="0.0" width="24" height="30"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGS-wA-gBM">
-                                    <rect key="frame" x="29" y="0.0" width="29.5" height="30"/>
+                                    <rect key="frame" x="31" y="0.0" width="29.5" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Or4-Tk-laJ">
-                                    <rect key="frame" x="63.5" y="0.0" width="236.5" height="30"/>
+                                    <rect key="frame" x="67.5" y="0.0" width="232.5" height="30"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgD-8U-sXO">
-                                            <rect key="frame" x="5" y="-2" width="226.5" height="34"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgD-8U-sXO">
+                                            <rect key="frame" x="5" y="6" width="222.5" height="18.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -63,6 +67,7 @@
                                     <constraints>
                                         <constraint firstItem="qgD-8U-sXO" firstAttribute="leading" secondItem="Or4-Tk-laJ" secondAttribute="leading" constant="5" id="Grt-Ld-cFB"/>
                                         <constraint firstAttribute="trailing" secondItem="qgD-8U-sXO" secondAttribute="trailing" constant="5" id="O1f-dq-3b3"/>
+                                        <constraint firstItem="qgD-8U-sXO" firstAttribute="height" secondItem="Or4-Tk-laJ" secondAttribute="height" multiplier="0.616667" id="PDF-Ya-LhR"/>
                                         <constraint firstAttribute="height" constant="30" id="knF-Wj-WAt"/>
                                         <constraint firstItem="qgD-8U-sXO" firstAttribute="centerY" secondItem="Or4-Tk-laJ" secondAttribute="centerY" id="tog-s0-2Nm"/>
                                     </constraints>
@@ -84,8 +89,8 @@
                             <rect key="frame" x="20" y="163" width="300" height="30"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nT-yn-HR5">
-                                    <rect key="frame" x="5" y="5" width="41.5" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <rect key="frame" x="10" y="6.5" width="35.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -93,7 +98,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="3nT-yn-HR5" firstAttribute="centerY" secondItem="BOK-f7-dpS" secondAttribute="centerY" id="6R5-Xh-Kd8"/>
-                                <constraint firstItem="3nT-yn-HR5" firstAttribute="leading" secondItem="BOK-f7-dpS" secondAttribute="leading" constant="5" id="Mi6-Av-Ttw"/>
+                                <constraint firstItem="3nT-yn-HR5" firstAttribute="leading" secondItem="BOK-f7-dpS" secondAttribute="leading" constant="10" id="Mi6-Av-Ttw"/>
                                 <constraint firstAttribute="height" constant="30" id="k4G-WY-cqe"/>
                             </constraints>
                         </view>

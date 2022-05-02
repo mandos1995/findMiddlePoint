@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5041B1C5B615FDBCFA0B2BE3 /* Pods_FindMiddlePoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247D511F4C60CFFDDE5F4320 /* Pods_FindMiddlePoint.framework */; };
+		EE203CCB281D3DEE00A7E0EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203CCA281D3DEE00A7E0EE /* User.swift */; };
 		EE7C8F43281A602700CE498B /* HomeEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F42281A602700CE498B /* HomeEmptyCell.swift */; };
 		EE7C8F45281A603600CE498B /* HomeDistanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F44281A603600CE498B /* HomeDistanceCell.swift */; };
 		EE7C8F47281A608B00CE498B /* HomeViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F46281A608B00CE498B /* HomeViewController + TableView.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		247D511F4C60CFFDDE5F4320 /* Pods_FindMiddlePoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMiddlePoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF7343A73B3A2AA10C34579 /* Pods-FindMiddlePoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMiddlePoint.release.xcconfig"; path = "Target Support Files/Pods-FindMiddlePoint/Pods-FindMiddlePoint.release.xcconfig"; sourceTree = "<group>"; };
+		EE203CCA281D3DEE00A7E0EE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EE7C8F42281A602700CE498B /* HomeEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmptyCell.swift; sourceTree = "<group>"; };
 		EE7C8F44281A603600CE498B /* HomeDistanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDistanceCell.swift; sourceTree = "<group>"; };
 		EE7C8F46281A608B00CE498B /* HomeViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + TableView.swift"; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 				CFF7343A73B3A2AA10C34579 /* Pods-FindMiddlePoint.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE203CC9281D3DDD00A7E0EE /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				EE203CCA281D3DEE00A7E0EE /* User.swift */,
+			);
+			path = Struct;
 			sourceTree = "<group>";
 		};
 		EE7C8F41281A5FFB00CE498B /* Cell */ = {
@@ -253,6 +263,7 @@
 		EE90B0A228193BE9005E9A2D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EE203CC9281D3DDD00A7E0EE /* Struct */,
 				EE7C8F41281A5FFB00CE498B /* Cell */,
 				EE90B0A328193BF7005E9A2D /* Home.storyboard */,
 				EE90B0A528193C12005E9A2D /* HomeViewController.swift */,
@@ -398,6 +409,7 @@
 				EE90B0A628193C12005E9A2D /* HomeViewController.swift in Sources */,
 				EEF58530281BD25C00AA71D0 /* SettingViewController.swift in Sources */,
 				EE7C8F54281AD2AB00CE498B /* BaseViewController.swift in Sources */,
+				EE203CCB281D3DEE00A7E0EE /* User.swift in Sources */,
 				EEF5852A281BC4A000AA71D0 /* BasePopUpViewController.swift in Sources */,
 				EE7C8F59281AD73B00CE498B /* DistanceInputPopUpViewController.swift in Sources */,
 				EE7C8F50281AD1AA00CE498B /* BasePopUpDelegate.swift in Sources */,
