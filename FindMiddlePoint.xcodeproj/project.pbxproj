@@ -17,9 +17,12 @@
 		EE7C8F54281AD2AB00CE498B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F53281AD2AB00CE498B /* BaseViewController.swift */; };
 		EE7C8F59281AD73B00CE498B /* DistanceInputPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F57281AD73B00CE498B /* DistanceInputPopUpViewController.swift */; };
 		EE7C8F5A281AD73B00CE498B /* DistanceInputPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7C8F58281AD73B00CE498B /* DistanceInputPopUpViewController.xib */; };
-		EE7D44AF281FF2C20081348C /* Time.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7D44AE281FF2C20081348C /* Time.storyboard */; };
 		EE7D44B1281FF2CB0081348C /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7D44B0281FF2CB0081348C /* Weather.storyboard */; };
 		EE7D44B3281FF2D20081348C /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7D44B2281FF2D20081348C /* Map.storyboard */; };
+		EE7D44B52820057B0081348C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D44B42820057B0081348C /* MapViewController.swift */; };
+		EE7D44B7282005910081348C /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D44B6282005910081348C /* WeatherViewController.swift */; };
+		EE7D44BC282005E60081348C /* Distance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7D44BB282005E60081348C /* Distance.storyboard */; };
+		EE7D44BE282005F00081348C /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D44BD282005F00081348C /* DistanceViewController.swift */; };
 		EE90B07C281687CB005E9A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B07B281687CB005E9A2D /* AppDelegate.swift */; };
 		EE90B07E281687CB005E9A2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B07D281687CB005E9A2D /* SceneDelegate.swift */; };
 		EE90B080281687CB005E9A2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B07F281687CB005E9A2D /* ViewController.swift */; };
@@ -52,9 +55,12 @@
 		EE7C8F53281AD2AB00CE498B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EE7C8F57281AD73B00CE498B /* DistanceInputPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceInputPopUpViewController.swift; sourceTree = "<group>"; };
 		EE7C8F58281AD73B00CE498B /* DistanceInputPopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DistanceInputPopUpViewController.xib; sourceTree = "<group>"; };
-		EE7D44AE281FF2C20081348C /* Time.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Time.storyboard; sourceTree = "<group>"; };
 		EE7D44B0281FF2CB0081348C /* Weather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weather.storyboard; sourceTree = "<group>"; };
 		EE7D44B2281FF2D20081348C /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		EE7D44B42820057B0081348C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EE7D44B6282005910081348C /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		EE7D44BB282005E60081348C /* Distance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Distance.storyboard; sourceTree = "<group>"; };
+		EE7D44BD282005F00081348C /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 		EE90B078281687CB005E9A2D /* FindMiddlePoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMiddlePoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE90B07B281687CB005E9A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE90B07D281687CB005E9A2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				EE7D44B2281FF2D20081348C /* Map.storyboard */,
+				EE7D44B42820057B0081348C /* MapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -196,16 +203,18 @@
 			isa = PBXGroup;
 			children = (
 				EE7D44B0281FF2CB0081348C /* Weather.storyboard */,
+				EE7D44B6282005910081348C /* WeatherViewController.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
 		};
-		EE7D44AD281FF21F0081348C /* Time */ = {
+		EE7D44BA282005D80081348C /* Distance */ = {
 			isa = PBXGroup;
 			children = (
-				EE7D44AE281FF2C20081348C /* Time.storyboard */,
+				EE7D44BB282005E60081348C /* Distance.storyboard */,
+				EE7D44BD282005F00081348C /* DistanceViewController.swift */,
 			);
-			path = Time;
+			path = Distance;
 			sourceTree = "<group>";
 		};
 		EE90B06F281687CB005E9A2D = {
@@ -274,7 +283,7 @@
 		EE90B0992817B024005E9A2D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				EE7D44AD281FF21F0081348C /* Time */,
+				EE7D44BA282005D80081348C /* Distance */,
 				EE7D44AC281FF2190081348C /* Weather */,
 				EE7D44AB281FF1480081348C /* Map */,
 				EE90B0A228193BE9005E9A2D /* Home */,
@@ -381,8 +390,8 @@
 				EEF58537281BE17A00AA71D0 /* AddressWebViewController.xib in Resources */,
 				EE90B088281687CF005E9A2D /* LaunchScreen.storyboard in Resources */,
 				EE7C8F5A281AD73B00CE498B /* DistanceInputPopUpViewController.xib in Resources */,
-				EE7D44AF281FF2C20081348C /* Time.storyboard in Resources */,
 				EE7D44B3281FF2D20081348C /* Map.storyboard in Resources */,
+				EE7D44BC282005E60081348C /* Distance.storyboard in Resources */,
 				EE90B085281687CF005E9A2D /* Assets.xcassets in Resources */,
 				EE90B083281687CB005E9A2D /* Main.storyboard in Resources */,
 			);
@@ -450,6 +459,7 @@
 				EE7C8F59281AD73B00CE498B /* DistanceInputPopUpViewController.swift in Sources */,
 				EE7C8F50281AD1AA00CE498B /* BasePopUpDelegate.swift in Sources */,
 				EE7C8F43281A602700CE498B /* HomeEmptyCell.swift in Sources */,
+				EE7D44B52820057B0081348C /* MapViewController.swift in Sources */,
 				EEF58532281BD27B00AA71D0 /* Constants.swift in Sources */,
 				EE90B07C281687CB005E9A2D /* AppDelegate.swift in Sources */,
 				EE90B07E281687CB005E9A2D /* SceneDelegate.swift in Sources */,
@@ -457,6 +467,8 @@
 				EE90B09228168B33005E9A2D /* UIViewController.swift.swift in Sources */,
 				EE7C8F49281A644900CE498B /* LoginNavigationController.swift in Sources */,
 				EE90B09528168BB6005E9A2D /* IndicatorView.swift in Sources */,
+				EE7D44B7282005910081348C /* WeatherViewController.swift in Sources */,
+				EE7D44BE282005F00081348C /* DistanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

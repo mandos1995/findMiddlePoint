@@ -12,12 +12,24 @@
         <!--지도-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="MapViewController" customModule="FindMiddlePoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ns-Zt-Rml" customClass="NMFMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Ns-Zt-Rml" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Gsj-ts-Dru"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6Ns-Zt-Rml" secondAttribute="trailing" id="Plc-a4-xVd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6Ns-Zt-Rml" secondAttribute="bottom" id="QYf-ua-c23"/>
+                            <constraint firstItem="6Ns-Zt-Rml" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="fJc-YJ-fnU"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="지도" image="icDeselectedMap" selectedImage="icSelectedMap" id="vXp-f5-ZuD">
                         <color key="badgeColor" systemColor="labelColor"/>

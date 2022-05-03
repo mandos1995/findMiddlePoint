@@ -13,6 +13,7 @@
                 <tabBarController storyboardIdentifier="MainStoryBoard" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tRE-Hw-I5q" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ek4-mJ-XNC">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -46,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="344" y="518"/>
         </scene>
-        <!--Time-->
+        <!--Distance-->
         <scene sceneID="Eot-a6-6di">
             <objects>
-                <viewControllerPlaceholder storyboardName="Time" id="Xxn-My-0MG" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Distance" id="Xxn-My-0MG" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="WkY-70-90M"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbH-my-ax7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -7,6 +7,7 @@ target 'FindMiddlePoint' do
   pod 'KakaoSDKAuth'
   pod 'KakaoSDKUser'
   pod 'SnapKit', '~> 5.0.1'
+  pod 'NMapsMap'
   # Pods for FindMiddlePoint
 
 end
