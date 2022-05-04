@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5041B1C5B615FDBCFA0B2BE3 /* Pods_FindMiddlePoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247D511F4C60CFFDDE5F4320 /* Pods_FindMiddlePoint.framework */; };
+		EE1B0E38282121BB00DC5714 /* GetCoordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E37282121BB00DC5714 /* GetCoordResponse.swift */; };
+		EE1B0E3C2821229700DC5714 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E3B2821229700DC5714 /* HomeProtocol.swift */; };
+		EE1B0E3E2821231F00DC5714 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E3D2821231F00DC5714 /* HomeDataManager.swift */; };
+		EE1B0E40282123CD00DC5714 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E3F282123CD00DC5714 /* Secret.swift */; };
+		EE1B0E42282124DE00DC5714 /* MapViewController + ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E41282124DE00DC5714 /* MapViewController + ViewDelegate.swift */; };
 		EE203CCB281D3DEE00A7E0EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203CCA281D3DEE00A7E0EE /* User.swift */; };
 		EE7C8F43281A602700CE498B /* HomeEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F42281A602700CE498B /* HomeEmptyCell.swift */; };
 		EE7C8F45281A603600CE498B /* HomeDistanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F44281A603600CE498B /* HomeDistanceCell.swift */; };
@@ -36,6 +41,7 @@
 		EE90B09E2817B097005E9A2D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90B09D2817B097005E9A2D /* Login.storyboard */; };
 		EE90B0A428193BF7005E9A2D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90B0A328193BF7005E9A2D /* Home.storyboard */; };
 		EE90B0A628193C12005E9A2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B0A528193C12005E9A2D /* HomeViewController.swift */; };
+		EEDD198F282259080071C6E7 /* HomeViewController + ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD198E282259080071C6E7 /* HomeViewController + ViewDelegate.swift */; };
 		EEF5852A281BC4A000AA71D0 /* BasePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF58529281BC4A000AA71D0 /* BasePopUpViewController.swift */; };
 		EEF58530281BD25C00AA71D0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5852F281BD25C00AA71D0 /* SettingViewController.swift */; };
 		EEF58532281BD27B00AA71D0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF58531281BD27B00AA71D0 /* Constants.swift */; };
@@ -46,6 +52,11 @@
 /* Begin PBXFileReference section */
 		247D511F4C60CFFDDE5F4320 /* Pods_FindMiddlePoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMiddlePoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF7343A73B3A2AA10C34579 /* Pods-FindMiddlePoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMiddlePoint.release.xcconfig"; path = "Target Support Files/Pods-FindMiddlePoint/Pods-FindMiddlePoint.release.xcconfig"; sourceTree = "<group>"; };
+		EE1B0E37282121BB00DC5714 /* GetCoordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCoordResponse.swift; sourceTree = "<group>"; };
+		EE1B0E3B2821229700DC5714 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		EE1B0E3D2821231F00DC5714 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		EE1B0E3F282123CD00DC5714 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		EE1B0E41282124DE00DC5714 /* MapViewController + ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController + ViewDelegate.swift"; sourceTree = "<group>"; };
 		EE203CCA281D3DEE00A7E0EE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EE7C8F42281A602700CE498B /* HomeEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmptyCell.swift; sourceTree = "<group>"; };
 		EE7C8F44281A603600CE498B /* HomeDistanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDistanceCell.swift; sourceTree = "<group>"; };
@@ -76,6 +87,7 @@
 		EE90B09D2817B097005E9A2D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EE90B0A328193BF7005E9A2D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EE90B0A528193C12005E9A2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EEDD198E282259080071C6E7 /* HomeViewController + ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + ViewDelegate.swift"; sourceTree = "<group>"; };
 		EEF58529281BC4A000AA71D0 /* BasePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePopUpViewController.swift; sourceTree = "<group>"; };
 		EEF5852F281BD25C00AA71D0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EEF58531281BD27B00AA71D0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -111,6 +123,27 @@
 				CFF7343A73B3A2AA10C34579 /* Pods-FindMiddlePoint.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE1B0E362821219400DC5714 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EE1B0E392821221900DC5714 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EE1B0E3A2821221E00DC5714 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		EE203CC9281D3DDD00A7E0EE /* Struct */ = {
@@ -162,6 +195,7 @@
 			children = (
 				EE7C8F52281AD29100CE498B /* BaseViewController */,
 				EEF58531281BD27B00AA71D0 /* Constants.swift */,
+				EE1B0E3F282123CD00DC5714 /* Secret.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -193,8 +227,12 @@
 		EE7D44AB281FF1480081348C /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				EE1B0E3A2821221E00DC5714 /* DataManager */,
+				EE1B0E392821221900DC5714 /* Protocol */,
+				EE1B0E362821219400DC5714 /* Entity */,
 				EE7D44B2281FF2D20081348C /* Map.storyboard */,
 				EE7D44B42820057B0081348C /* MapViewController.swift */,
+				EE1B0E41282124DE00DC5714 /* MapViewController + ViewDelegate.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -305,14 +343,42 @@
 		EE90B0A228193BE9005E9A2D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EEDD198D282258400071C6E7 /* Entity */,
+				EEDD198C2822583B0071C6E7 /* DataManager */,
+				EEDD198B2822582A0071C6E7 /* Protocol */,
 				EE203CC9281D3DDD00A7E0EE /* Struct */,
 				EE7C8F41281A5FFB00CE498B /* Cell */,
 				EE90B0A328193BF7005E9A2D /* Home.storyboard */,
 				EE90B0A528193C12005E9A2D /* HomeViewController.swift */,
 				EE7C8F46281A608B00CE498B /* HomeViewController + TableView.swift */,
+				EEDD198E282259080071C6E7 /* HomeViewController + ViewDelegate.swift */,
 				EEF5852F281BD25C00AA71D0 /* SettingViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		EEDD198B2822582A0071C6E7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B0E3B2821229700DC5714 /* HomeProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EEDD198C2822583B0071C6E7 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B0E3D2821231F00DC5714 /* HomeDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		EEDD198D282258400071C6E7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B0E37282121BB00DC5714 /* GetCoordResponse.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		EEF58533281BE16100AA71D0 /* Web */ = {
@@ -453,8 +519,12 @@
 				EE7C8F45281A603600CE498B /* HomeDistanceCell.swift in Sources */,
 				EE90B0A628193C12005E9A2D /* HomeViewController.swift in Sources */,
 				EEF58530281BD25C00AA71D0 /* SettingViewController.swift in Sources */,
+				EE1B0E38282121BB00DC5714 /* GetCoordResponse.swift in Sources */,
 				EE7C8F54281AD2AB00CE498B /* BaseViewController.swift in Sources */,
 				EE203CCB281D3DEE00A7E0EE /* User.swift in Sources */,
+				EE1B0E3C2821229700DC5714 /* HomeProtocol.swift in Sources */,
+				EE1B0E42282124DE00DC5714 /* MapViewController + ViewDelegate.swift in Sources */,
+				EEDD198F282259080071C6E7 /* HomeViewController + ViewDelegate.swift in Sources */,
 				EEF5852A281BC4A000AA71D0 /* BasePopUpViewController.swift in Sources */,
 				EE7C8F59281AD73B00CE498B /* DistanceInputPopUpViewController.swift in Sources */,
 				EE7C8F50281AD1AA00CE498B /* BasePopUpDelegate.swift in Sources */,
@@ -468,6 +538,8 @@
 				EE7C8F49281A644900CE498B /* LoginNavigationController.swift in Sources */,
 				EE90B09528168BB6005E9A2D /* IndicatorView.swift in Sources */,
 				EE7D44B7282005910081348C /* WeatherViewController.swift in Sources */,
+				EE1B0E3E2821231F00DC5714 /* HomeDataManager.swift in Sources */,
+				EE1B0E40282123CD00DC5714 /* Secret.swift in Sources */,
 				EE7D44BE282005F00081348C /* DistanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

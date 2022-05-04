@@ -8,4 +8,6 @@
 struct User {
     var name: String
     var address: String
+    var x: String
+    var y: String
 }

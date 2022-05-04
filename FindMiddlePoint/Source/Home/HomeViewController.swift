@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
+    private lazy var dataManager: HomeDelegate = HomeDataManager()
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
@@ -28,10 +29,7 @@ class HomeViewController: BaseViewController {
     }
     @IBAction func addDistanceButtonTouchUpInside(_ sender: UIButton) {
         presentDistanceInputPopUp { name, address in
-            let user = User(name: name, address: address)
-            self.distanceList.append(user)
-            self.buttonSetting()
-            self.tableView.reloadData()
+            self.dataManager.getCoordResponse(name: name, address: address, delegate: self)
         }
     }
     @IBAction func confirmButtonTouchUpInside(_ sender: UIButton) {
