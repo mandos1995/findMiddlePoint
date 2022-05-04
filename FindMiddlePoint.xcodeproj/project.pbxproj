@@ -42,6 +42,8 @@
 		EE90B0A428193BF7005E9A2D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90B0A328193BF7005E9A2D /* Home.storyboard */; };
 		EE90B0A628193C12005E9A2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90B0A528193C12005E9A2D /* HomeViewController.swift */; };
 		EEDD198F282259080071C6E7 /* HomeViewController + ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD198E282259080071C6E7 /* HomeViewController + ViewDelegate.swift */; };
+		EEDD199128225D5E0071C6E7 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD199028225D5E0071C6E7 /* MainTabbarViewController.swift */; };
+		EEDD199328226FDF0071C6E7 /* DistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD199228226FDF0071C6E7 /* DistanceManager.swift */; };
 		EEF5852A281BC4A000AA71D0 /* BasePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF58529281BC4A000AA71D0 /* BasePopUpViewController.swift */; };
 		EEF58530281BD25C00AA71D0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5852F281BD25C00AA71D0 /* SettingViewController.swift */; };
 		EEF58532281BD27B00AA71D0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF58531281BD27B00AA71D0 /* Constants.swift */; };
@@ -88,6 +90,8 @@
 		EE90B0A328193BF7005E9A2D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EE90B0A528193C12005E9A2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EEDD198E282259080071C6E7 /* HomeViewController + ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + ViewDelegate.swift"; sourceTree = "<group>"; };
+		EEDD199028225D5E0071C6E7 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		EEDD199228226FDF0071C6E7 /* DistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceManager.swift; sourceTree = "<group>"; };
 		EEF58529281BC4A000AA71D0 /* BasePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePopUpViewController.swift; sourceTree = "<group>"; };
 		EEF5852F281BD25C00AA71D0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EEF58531281BD27B00AA71D0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -282,10 +286,12 @@
 				EE90B07B281687CB005E9A2D /* AppDelegate.swift */,
 				EE90B07D281687CB005E9A2D /* SceneDelegate.swift */,
 				EE90B07F281687CB005E9A2D /* ViewController.swift */,
+				EEDD199028225D5E0071C6E7 /* MainTabbarViewController.swift */,
 				EE90B081281687CB005E9A2D /* Main.storyboard */,
 				EE90B084281687CF005E9A2D /* Assets.xcassets */,
 				EE90B086281687CF005E9A2D /* LaunchScreen.storyboard */,
 				EE90B089281687CF005E9A2D /* Info.plist */,
+				EEDD199228226FDF0071C6E7 /* DistanceManager.swift */,
 			);
 			path = FindMiddlePoint;
 			sourceTree = "<group>";
@@ -521,9 +527,11 @@
 				EEF58530281BD25C00AA71D0 /* SettingViewController.swift in Sources */,
 				EE1B0E38282121BB00DC5714 /* GetCoordResponse.swift in Sources */,
 				EE7C8F54281AD2AB00CE498B /* BaseViewController.swift in Sources */,
+				EEDD199128225D5E0071C6E7 /* MainTabbarViewController.swift in Sources */,
 				EE203CCB281D3DEE00A7E0EE /* User.swift in Sources */,
 				EE1B0E3C2821229700DC5714 /* HomeProtocol.swift in Sources */,
 				EE1B0E42282124DE00DC5714 /* MapViewController + ViewDelegate.swift in Sources */,
+				EEDD199328226FDF0071C6E7 /* DistanceManager.swift in Sources */,
 				EEDD198F282259080071C6E7 /* HomeViewController + ViewDelegate.swift in Sources */,
 				EEF5852A281BC4A000AA71D0 /* BasePopUpViewController.swift in Sources */,
 				EE7C8F59281AD73B00CE498B /* DistanceInputPopUpViewController.swift in Sources */,

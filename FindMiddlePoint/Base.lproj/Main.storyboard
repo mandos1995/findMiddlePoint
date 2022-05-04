@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Main Tabbar View Controller-->
         <scene sceneID="FMI-0t-8Bj">
             <objects>
-                <tabBarController storyboardIdentifier="MainStoryBoard" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tRE-Hw-I5q" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tRE-Hw-I5q" customClass="MainTabbarViewController" customModule="FindMiddlePoint" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ek4-mJ-XNC">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -18,7 +18,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ANQ-ir-pDS" kind="relationship" relationship="viewControllers" id="SCF-fH-qJd"/>
+                        <segue destination="ANQ-ir-pDS" kind="relationship" relationship="viewControllers" destinationCreationSelector="mapViewSegueAction:sender:segueIdentifier:" id="SCF-fH-qJd"/>
                         <segue destination="Xxn-My-0MG" kind="relationship" relationship="viewControllers" id="Znc-Jp-8WV"/>
                         <segue destination="0VH-nq-xQe" kind="relationship" relationship="viewControllers" id="65D-Gy-KBI"/>
                     </connections>

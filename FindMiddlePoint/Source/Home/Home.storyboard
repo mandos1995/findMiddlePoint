@@ -178,15 +178,15 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="41.517857142857139"/>
         </scene>
-        <!--MainStoryBoard-->
+        <!--Main-->
         <scene sceneID="jhU-2b-Gtv">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MainStoryBoard" id="XQd-Pf-UHS" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Main" id="XQd-Pf-UHS" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="iG8-SF-sOX"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRa-CQ-gh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1562" y="-191"/>
+            <point key="canvasLocation" x="1612" y="-214"/>
         </scene>
         <!--설정-->
         <scene sceneID="G1i-RN-lQl">

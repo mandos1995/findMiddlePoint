@@ -33,6 +33,7 @@ class HomeViewController: BaseViewController {
         }
     }
     @IBAction func confirmButtonTouchUpInside(_ sender: UIButton) {
+
         
     }
     @IBAction func settingButtonTapped(_ sender: UIBarButtonItem) {
@@ -43,7 +44,7 @@ class HomeViewController: BaseViewController {
         }
     }
     func buttonSetting() {
-        if distanceList.count > 1 {
+        if DistanceManager.shared.distances.count > 1 {
             confirmButton.isEnabled = true
             confirmButton.backgroundColor = .systemIndigo
         } else {

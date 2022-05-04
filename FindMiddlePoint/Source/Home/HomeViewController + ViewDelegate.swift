@@ -10,7 +10,8 @@ import UIKit
 extension HomeViewController: HomeViewDelegate {
     func didSuccessGetCoordResponse(name: String, response: [Address]) {
         print(name, response)
-        distanceList.append(User(name: name, address: response[0].roadAddress, x: response[0].x, y: response[0].y))
+        // distanceList.append(User(name: name, address: response[0].roadAddress, x: response[0].x, y: response[0].y))
+        DistanceManager.shared.distances.append(DistanceManager.Distance.init(name: name, address: response[0].roadAddress, x: response[0].x, y: response[0].y))
         self.buttonSetting()
         self.tableView.reloadData()
     }
