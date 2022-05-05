@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller-->
+        <!--지도-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="MapViewController" customModule="FindMiddlePoint" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,6 +31,7 @@
                             <constraint firstItem="6Ns-Zt-Rml" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="fJc-YJ-fnU"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="지도" image="icDeselectedMap" selectedImage="icSelectedMap" id="jMm-Xh-P3i"/>
                     <navigationItem key="navigationItem" id="rO9-6g-z15"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -43,6 +44,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icDeselectedMap" width="24" height="24"/>
+        <image name="icSelectedMap" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

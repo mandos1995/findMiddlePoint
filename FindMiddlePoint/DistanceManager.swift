@@ -13,7 +13,10 @@ class DistanceManager {
     private init() { }
     
     var distances: [Distance] = []
-    var middlePoint: MiddlePoint?
+    var middleX: String?
+    var middleY: String?
+    var middleAddress: String?
+    var middleWeather: String?
     
     struct Distance {
         var name: String

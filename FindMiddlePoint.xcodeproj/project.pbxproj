@@ -14,6 +14,9 @@
 		EE1B0E40282123CD00DC5714 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E3F282123CD00DC5714 /* Secret.swift */; };
 		EE1B0E42282124DE00DC5714 /* MapViewController + ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E41282124DE00DC5714 /* MapViewController + ViewDelegate.swift */; };
 		EE203CCB281D3DEE00A7E0EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203CCA281D3DEE00A7E0EE /* User.swift */; };
+		EE7257FE2824204D00241926 /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7257FD2824204D00241926 /* MapDataManager.swift */; };
+		EE7258002824205800241926 /* MapProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7257FF2824205800241926 /* MapProtocol.swift */; };
+		EE7258022824206B00241926 /* GetReverseCoordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7258012824206B00241926 /* GetReverseCoordResponse.swift */; };
 		EE7C8F43281A602700CE498B /* HomeEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F42281A602700CE498B /* HomeEmptyCell.swift */; };
 		EE7C8F45281A603600CE498B /* HomeDistanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F44281A603600CE498B /* HomeDistanceCell.swift */; };
 		EE7C8F47281A608B00CE498B /* HomeViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C8F46281A608B00CE498B /* HomeViewController + TableView.swift */; };
@@ -60,6 +63,9 @@
 		EE1B0E3F282123CD00DC5714 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		EE1B0E41282124DE00DC5714 /* MapViewController + ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController + ViewDelegate.swift"; sourceTree = "<group>"; };
 		EE203CCA281D3DEE00A7E0EE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EE7257FD2824204D00241926 /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
+		EE7257FF2824205800241926 /* MapProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProtocol.swift; sourceTree = "<group>"; };
+		EE7258012824206B00241926 /* GetReverseCoordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReverseCoordResponse.swift; sourceTree = "<group>"; };
 		EE7C8F42281A602700CE498B /* HomeEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmptyCell.swift; sourceTree = "<group>"; };
 		EE7C8F44281A603600CE498B /* HomeDistanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDistanceCell.swift; sourceTree = "<group>"; };
 		EE7C8F46281A608B00CE498B /* HomeViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + TableView.swift"; sourceTree = "<group>"; };
@@ -132,6 +138,7 @@
 		EE1B0E362821219400DC5714 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				EE7258012824206B00241926 /* GetReverseCoordResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -139,6 +146,7 @@
 		EE1B0E392821221900DC5714 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				EE7257FF2824205800241926 /* MapProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -146,6 +154,7 @@
 		EE1B0E3A2821221E00DC5714 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				EE7257FD2824204D00241926 /* MapDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -520,6 +529,7 @@
 			files = (
 				EEF58536281BE17A00AA71D0 /* AddressWebViewController.swift in Sources */,
 				EE90B09C2817B08B005E9A2D /* LoginViewController.swift in Sources */,
+				EE7257FE2824204D00241926 /* MapDataManager.swift in Sources */,
 				EE90B080281687CB005E9A2D /* ViewController.swift in Sources */,
 				EE90B09728168C01005E9A2D /* UIColor.swift in Sources */,
 				EE7C8F45281A603600CE498B /* HomeDistanceCell.swift in Sources */,
@@ -542,12 +552,14 @@
 				EE90B07C281687CB005E9A2D /* AppDelegate.swift in Sources */,
 				EE90B07E281687CB005E9A2D /* SceneDelegate.swift in Sources */,
 				EE7C8F47281A608B00CE498B /* HomeViewController + TableView.swift in Sources */,
+				EE7258002824205800241926 /* MapProtocol.swift in Sources */,
 				EE90B09228168B33005E9A2D /* UIViewController.swift.swift in Sources */,
 				EE7C8F49281A644900CE498B /* LoginNavigationController.swift in Sources */,
 				EE90B09528168BB6005E9A2D /* IndicatorView.swift in Sources */,
 				EE7D44B7282005910081348C /* WeatherViewController.swift in Sources */,
 				EE1B0E3E2821231F00DC5714 /* HomeDataManager.swift in Sources */,
 				EE1B0E40282123CD00DC5714 /* Secret.swift in Sources */,
+				EE7258022824206B00241926 /* GetReverseCoordResponse.swift in Sources */,
 				EE7D44BE282005F00081348C /* DistanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
