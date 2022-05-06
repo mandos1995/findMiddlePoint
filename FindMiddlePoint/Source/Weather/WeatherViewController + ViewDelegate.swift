@@ -24,7 +24,7 @@ extension WeatherViewController: WeatherViewDelegate {
         case .none:
             weatherTypeImageView.image = UIImage(named: "icWeaherTypeClear")
         }
-        tempLabel.text = "온도 : \(temp) +  ℃"
+        tempLabel.text = "온도 : \(temp) ℃"
         windSpeedLabel.text = "풍속 : \(response.wind.speed) m/s"
     }
     

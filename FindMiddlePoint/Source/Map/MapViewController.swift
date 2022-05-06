@@ -13,13 +13,11 @@ class MapViewController: BaseViewController {
     @IBOutlet weak var mapView: NMFMapView!
     var distances = DistanceManager.shared.distances
     var middleAddress = ""
+    let middlePointMarker = NMFMarker()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let marker = NMFMarker()
-        let middlePoint = getMiddlePoint()
-        marker.position = NMGLatLng(lat: middlePoint.1, lng: middlePoint.0)
-        marker.mapView = mapView
-        dataManager.getReverseCoordResponse(x: "\(middlePoint.0)", y: "\(middlePoint.1)", delegate: self)
+        drawMarker()
+        drawLine()
     }
     
     func getMiddlePoint() -> (Double, Double){
@@ -33,5 +31,34 @@ class MapViewController: BaseViewController {
             print("")
         }
         return (x, y)
+    }
+    
+    func drawMarker() {
+        for distance in distances {
+            let marker = NMFMarker()
+            marker.position = NMGLatLng(lat: Double(distance.y) ?? 0, lng: Double(distance.x) ?? 0)
+            marker.captionText = distance.name
+            marker.mapView = mapView
+        }
+        let middlePoint = getMiddlePoint()
+        middlePointMarker.position = NMGLatLng(lat: middlePoint.1, lng: middlePoint.0)
+        middlePointMarker.mapView = mapView
+        let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: middlePoint.1, lng: middlePoint.0))
+        mapView.moveCamera(cameraUpdate)
+        dataManager.getReverseCoordResponse(x: "\(middlePoint.0)", y: "\(middlePoint.1)", delegate: self)
+    }
+    
+    func drawLine() {
+        let pathOverlay = NMFPath()
+        var pathes: [NMGLatLng] = []
+        for distance in distances {
+            let line = NMGLatLng(lat: Double(distance.y) ?? 0, lng: Double(distance.x) ?? 0)
+            pathes.append(line)
+        }
+        
+        pathOverlay.path = NMGLineString(points:pathes)
+        pathOverlay.color = UIColor.gray
+        pathOverlay.mapView = mapView
+        
     }
 }

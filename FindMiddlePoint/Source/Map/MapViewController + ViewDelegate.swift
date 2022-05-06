@@ -11,8 +11,8 @@ extension MapViewController: MapViewDelegate {
     func didSuccessGetReverseCoordResponse(_ response: Region) {
         middleAddress = "\(response.area1.name) \(response.area2.name) \(response.area3.name)"
         DistanceManager.shared.middleAddress = middleAddress
-        print(middleAddress)
-        print(DistanceManager.shared.middleAddress)
+        middlePointMarker.captionRequestedWidth = 70
+        middlePointMarker.captionText = middleAddress
     }
     
     func failedToGetCoordResponse(message: String) {
