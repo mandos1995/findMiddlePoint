@@ -12,6 +12,7 @@
 		EE1570602824F4100045D487 /* WeatherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15705F2824F4100045D487 /* WeatherProtocol.swift */; };
 		EE1570622824F4720045D487 /* WeatherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1570612824F4720045D487 /* WeatherDataManager.swift */; };
 		EE1570642824F5150045D487 /* WeatherViewController + ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1570632824F5150045D487 /* WeatherViewController + ViewDelegate.swift */; };
+		EE1570672824F84C0045D487 /* WeatherMainType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1570662824F84C0045D487 /* WeatherMainType.swift */; };
 		EE1B0E38282121BB00DC5714 /* GetCoordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E37282121BB00DC5714 /* GetCoordResponse.swift */; };
 		EE1B0E3C2821229700DC5714 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E3B2821229700DC5714 /* HomeProtocol.swift */; };
 		EE1B0E3E2821231F00DC5714 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E3D2821231F00DC5714 /* HomeDataManager.swift */; };
@@ -65,6 +66,7 @@
 		EE15705F2824F4100045D487 /* WeatherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherProtocol.swift; sourceTree = "<group>"; };
 		EE1570612824F4720045D487 /* WeatherDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataManager.swift; sourceTree = "<group>"; };
 		EE1570632824F5150045D487 /* WeatherViewController + ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherViewController + ViewDelegate.swift"; sourceTree = "<group>"; };
+		EE1570662824F84C0045D487 /* WeatherMainType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMainType.swift; sourceTree = "<group>"; };
 		EE1B0E37282121BB00DC5714 /* GetCoordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCoordResponse.swift; sourceTree = "<group>"; };
 		EE1B0E3B2821229700DC5714 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
 		EE1B0E3D2821231F00DC5714 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
@@ -165,6 +167,14 @@
 				EE1570612824F4720045D487 /* WeatherDataManager.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		EE1570652824F8090045D487 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				EE1570662824F84C0045D487 /* WeatherMainType.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		EE1B0E362821219400DC5714 /* Entity */ = {
@@ -285,6 +295,7 @@
 		EE7D44AC281FF2190081348C /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				EE1570652824F8090045D487 /* Enum */,
 				EE15705C2824F3600045D487 /* DataManager */,
 				EE15705B2824F35B0045D487 /* Protocol */,
 				EE15705A2824F3530045D487 /* Entity */,
@@ -582,6 +593,7 @@
 				EEDD198F282259080071C6E7 /* HomeViewController + ViewDelegate.swift in Sources */,
 				EEF5852A281BC4A000AA71D0 /* BasePopUpViewController.swift in Sources */,
 				EE7C8F59281AD73B00CE498B /* DistanceInputPopUpViewController.swift in Sources */,
+				EE1570672824F84C0045D487 /* WeatherMainType.swift in Sources */,
 				EE1570642824F5150045D487 /* WeatherViewController + ViewDelegate.swift in Sources */,
 				EE7C8F50281AD1AA00CE498B /* BasePopUpDelegate.swift in Sources */,
 				EE7C8F43281A602700CE498B /* HomeEmptyCell.swift in Sources */,

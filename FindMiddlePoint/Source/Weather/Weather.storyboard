@@ -16,20 +16,75 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경기도 고양시 일산서구 가좌로 1 네이처" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpt-3B-XJa">
+                                <rect key="frame" x="20" y="94" width="374" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Om1-jR-Tfq">
+                                <rect key="frame" x="160" y="633" width="94.5" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cBG-EF-KbI">
+                                        <rect key="frame" x="0.0" y="0.0" width="94.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23.5 ℃" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUW-kw-paD">
+                                                <rect key="frame" x="0.0" y="0.0" width="94.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1WF-hY-haD">
+                                        <rect key="frame" x="0.0" y="50" width="94.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.26 m/s" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLB-ce-jKB">
+                                                <rect key="frame" x="0.0" y="0.0" width="94.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icWeaherTypeClear" translatesAutoresizingMaskIntoConstraints="NO" id="ape-5W-cfp">
+                                <rect key="frame" x="79" y="270" width="256" height="256"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cpt-3B-XJa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="6JK-Ip-n5v"/>
+                            <constraint firstItem="ape-5W-cfp" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-50" id="6kv-8v-Geh"/>
+                            <constraint firstItem="Cpt-3B-XJa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="I21-Er-xRv"/>
+                            <constraint firstItem="ape-5W-cfp" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="RXG-De-vnG"/>
+                            <constraint firstItem="Cpt-3B-XJa" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="UPb-dS-X1E"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Om1-jR-Tfq" secondAttribute="bottom" constant="100" id="bWS-GD-ipN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Cpt-3B-XJa" secondAttribute="trailing" constant="20" id="cIg-tO-qST"/>
+                            <constraint firstItem="Om1-jR-Tfq" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="iWX-ZS-xMB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="날씨" image="icDeselectedWeather" selectedImage="icSelectedWeather" id="U95-SR-4PB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="Cpt-3B-XJa" id="rDa-Sd-C6g"/>
+                        <outlet property="tempLabel" destination="PUW-kw-paD" id="0B3-pM-PCs"/>
+                        <outlet property="weatherTypeImageView" destination="ape-5W-cfp" id="GFd-6W-uuQ"/>
+                        <outlet property="windSpeedLabel" destination="dLB-ce-jKB" id="RCq-ym-He3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="110"/>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
         </scene>
     </scenes>
     <resources>
         <image name="icDeselectedWeather" width="24" height="24"/>
         <image name="icSelectedWeather" width="24" height="24"/>
+        <image name="icWeaherTypeClear" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
