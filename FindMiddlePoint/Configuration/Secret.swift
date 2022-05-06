@@ -14,4 +14,7 @@ struct Secret {
             "X-NCP-APIGW-API-KEY" : "NthRwBjCsu5DxDEZp06ijdUwXotqSqcQYpVjySrk"
         ]
     }
+    static var WEATHER_API_KEY: String {
+        return "4b889248731611b5487b7bb1efe9beea"
+    }
 }

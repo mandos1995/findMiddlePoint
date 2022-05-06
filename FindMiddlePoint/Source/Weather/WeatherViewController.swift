@@ -8,10 +8,13 @@
 import UIKit
 
 class WeatherViewController: UIViewController {
+    private lazy var dataManager: WeatherDelegate = WeahterDataManager()
+    var temp = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let y = Double(DistanceManager.shared.middleY ?? "") ?? 0
+        let x = Double(DistanceManager.shared.middleX ?? "") ?? 0
+        dataManager.getWeatherResponse(y: y, x: x, delegate: self)
     }
     
 
