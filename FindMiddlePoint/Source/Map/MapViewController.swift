@@ -27,6 +27,13 @@ class MapViewController: BaseViewController {
         case 2:
             x = ((Double(distances[0].x) ?? 0) + (Double(distances[1].x) ?? 0)) / 2
             y = ((Double(distances[0].y) ?? 0) + (Double(distances[1].y) ?? 0)) / 2
+        case 3:
+            for distance in distances {
+                x += Double(distance.x) ?? 0
+                y += Double(distance.y) ?? 0
+            }
+            x /= 3
+            y /= 3
         default:
             print("")
         }
@@ -55,7 +62,8 @@ class MapViewController: BaseViewController {
             let line = NMGLatLng(lat: Double(distance.y) ?? 0, lng: Double(distance.x) ?? 0)
             pathes.append(line)
         }
-        
+        let lastLine = NMGLatLng(lat: Double(distances[0].y) ?? 0, lng: Double(distances[0].x) ?? 0)
+        pathes.append(lastLine)
         pathOverlay.path = NMGLineString(points:pathes)
         pathOverlay.color = UIColor.gray
         pathOverlay.mapView = mapView
