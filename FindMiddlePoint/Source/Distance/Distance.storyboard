@@ -16,15 +16,97 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="20" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AY2-oz-iYL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="gOa-mS-yz9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DistanceInfoCell" rowHeight="200" id="eTh-da-JiM" customClass="DistanceInfoCell" customModule="FindMiddlePoint" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="104.5" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eTh-da-JiM" id="Lmo-DW-aoS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajD-NK-YaD">
+                                                    <rect key="frame" x="20" y="20" width="374" height="160"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소요시간 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlc-9v-xJR">
+                                                            <rect key="frame" x="15" y="124" width="68" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가여ㅕ여여여여여영여ㅕ여여여여여ㅕ여여여여여여ㅕㄴㅇㅇ마아ㅣㅁㄴ아ㅣㅁ경가여ㅕ여여여여여영여ㅕ여여여여여ㅕ여여여여여여ㅕㄴㅇㅇ마아ㅣㅁㄴ아ㅣㅁ경" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdm-cm-MpM">
+                                                            <rect key="frame" x="20" y="15" width="334" height="57.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="거리 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3v-5g-Onq">
+                                                            <rect key="frame" x="15" y="88" width="43" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Cdm-cm-MpM" firstAttribute="centerX" secondItem="ajD-NK-YaD" secondAttribute="centerX" id="7Fa-zx-B8t"/>
+                                                        <constraint firstItem="vlc-9v-xJR" firstAttribute="leading" secondItem="ajD-NK-YaD" secondAttribute="leading" constant="15" id="91v-Qe-HAv"/>
+                                                        <constraint firstAttribute="bottom" secondItem="vlc-9v-xJR" secondAttribute="bottom" constant="15" id="Hp7-Xu-T30"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Cdm-cm-MpM" secondAttribute="trailing" constant="20" id="KFr-bi-VSZ"/>
+                                                        <constraint firstItem="Cdm-cm-MpM" firstAttribute="leading" secondItem="ajD-NK-YaD" secondAttribute="leading" constant="20" id="Lmc-eP-W9E"/>
+                                                        <constraint firstItem="vlc-9v-xJR" firstAttribute="top" secondItem="C3v-5g-Onq" secondAttribute="bottom" constant="15" id="PCi-NL-zbN"/>
+                                                        <constraint firstItem="C3v-5g-Onq" firstAttribute="leading" secondItem="ajD-NK-YaD" secondAttribute="leading" constant="15" id="VMz-lm-b9a"/>
+                                                        <constraint firstItem="Cdm-cm-MpM" firstAttribute="top" secondItem="ajD-NK-YaD" secondAttribute="top" constant="15" id="iH0-s9-fVE"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ajD-NK-YaD" secondAttribute="trailing" constant="20" id="BlY-6c-Wu7"/>
+                                                <constraint firstItem="ajD-NK-YaD" firstAttribute="top" secondItem="Lmo-DW-aoS" secondAttribute="top" constant="20" id="Exb-zP-WRR"/>
+                                                <constraint firstItem="ajD-NK-YaD" firstAttribute="leading" secondItem="Lmo-DW-aoS" secondAttribute="leading" constant="20" id="HdC-UY-O3s"/>
+                                                <constraint firstAttribute="bottom" secondItem="ajD-NK-YaD" secondAttribute="bottom" constant="20" id="Tlj-N2-8kW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="distanceLabel" destination="C3v-5g-Onq" id="Ioc-rC-ig0"/>
+                                            <outlet property="headLabel" destination="Cdm-cm-MpM" id="6nN-B6-36x"/>
+                                            <outlet property="timeLabel" destination="vlc-9v-xJR" id="wpi-FW-JWU"/>
+                                            <outlet property="view" destination="ajD-NK-YaD" id="gTP-Bq-eRD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="nzQ-Rv-2zY"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="MG5-e9-pXU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="AY2-oz-iYL" secondAttribute="bottom" id="JW7-Mq-XMm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AY2-oz-iYL" secondAttribute="trailing" id="VRb-6O-h9E"/>
+                            <constraint firstItem="AY2-oz-iYL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="iYV-LT-YyH"/>
+                            <constraint firstItem="AY2-oz-iYL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xDW-f1-dU7"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="거리" image="icDeselectedDistance" selectedImage="icSelectedDistance" id="Bpd-Id-pNh"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="AY2-oz-iYL" id="kwn-TY-FVv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="110"/>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
         </scene>
     </scenes>
     <resources>

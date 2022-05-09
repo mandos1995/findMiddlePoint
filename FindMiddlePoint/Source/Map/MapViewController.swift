@@ -52,6 +52,8 @@ class MapViewController: BaseViewController {
         middlePointMarker.mapView = mapView
         let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: middlePoint.1, lng: middlePoint.0))
         mapView.moveCamera(cameraUpdate)
+        DistanceManager.shared.middleX = "\(middlePoint.0)"
+        DistanceManager.shared.middleY = "\(middlePoint.1)"
         dataManager.getReverseCoordResponse(x: "\(middlePoint.0)", y: "\(middlePoint.1)", delegate: self)
     }
     

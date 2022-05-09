@@ -19,6 +19,12 @@
 		EE1B0E40282123CD00DC5714 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E3F282123CD00DC5714 /* Secret.swift */; };
 		EE1B0E42282124DE00DC5714 /* MapViewController + ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B0E41282124DE00DC5714 /* MapViewController + ViewDelegate.swift */; };
 		EE203CCB281D3DEE00A7E0EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203CCA281D3DEE00A7E0EE /* User.swift */; };
+		EE250C142829065600EEB326 /* DistanceInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE250C132829065600EEB326 /* DistanceInfoCell.swift */; };
+		EE250C16282906D300EEB326 /* DistanceViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE250C15282906D300EEB326 /* DistanceViewController + TableView.swift */; };
+		EE250C1B2829086100EEB326 /* DistanceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE250C1A2829086100EEB326 /* DistanceProtocol.swift */; };
+		EE250C1D282908B400EEB326 /* GetPathResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE250C1C282908B400EEB326 /* GetPathResponse.swift */; };
+		EE250C1F28290A6900EEB326 /* DistanceDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE250C1E28290A6900EEB326 /* DistanceDataManager.swift */; };
+		EE250C2128290B9000EEB326 /* DistanceViewController + ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE250C2028290B9000EEB326 /* DistanceViewController + ViewDelegate.swift */; };
 		EE7257FE2824204D00241926 /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7257FD2824204D00241926 /* MapDataManager.swift */; };
 		EE7258002824205800241926 /* MapProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7257FF2824205800241926 /* MapProtocol.swift */; };
 		EE7258022824206B00241926 /* GetReverseCoordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7258012824206B00241926 /* GetReverseCoordResponse.swift */; };
@@ -73,6 +79,12 @@
 		EE1B0E3F282123CD00DC5714 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		EE1B0E41282124DE00DC5714 /* MapViewController + ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController + ViewDelegate.swift"; sourceTree = "<group>"; };
 		EE203CCA281D3DEE00A7E0EE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EE250C132829065600EEB326 /* DistanceInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceInfoCell.swift; sourceTree = "<group>"; };
+		EE250C15282906D300EEB326 /* DistanceViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DistanceViewController + TableView.swift"; sourceTree = "<group>"; };
+		EE250C1A2829086100EEB326 /* DistanceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceProtocol.swift; sourceTree = "<group>"; };
+		EE250C1C282908B400EEB326 /* GetPathResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPathResponse.swift; sourceTree = "<group>"; };
+		EE250C1E28290A6900EEB326 /* DistanceDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceDataManager.swift; sourceTree = "<group>"; };
+		EE250C2028290B9000EEB326 /* DistanceViewController + ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DistanceViewController + ViewDelegate.swift"; sourceTree = "<group>"; };
 		EE7257FD2824204D00241926 /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
 		EE7257FF2824205800241926 /* MapProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProtocol.swift; sourceTree = "<group>"; };
 		EE7258012824206B00241926 /* GetReverseCoordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReverseCoordResponse.swift; sourceTree = "<group>"; };
@@ -209,6 +221,38 @@
 			path = Struct;
 			sourceTree = "<group>";
 		};
+		EE250C122829063200EEB326 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE250C132829065600EEB326 /* DistanceInfoCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EE250C172829073B00EEB326 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE250C1E28290A6900EEB326 /* DistanceDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		EE250C182829074300EEB326 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EE250C1A2829086100EEB326 /* DistanceProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EE250C192829074D00EEB326 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EE250C1C282908B400EEB326 /* GetPathResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		EE7C8F41281A5FFB00CE498B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,8 +353,14 @@
 		EE7D44BA282005D80081348C /* Distance */ = {
 			isa = PBXGroup;
 			children = (
+				EE250C192829074D00EEB326 /* Entity */,
+				EE250C182829074300EEB326 /* Protocol */,
+				EE250C172829073B00EEB326 /* DataManager */,
+				EE250C122829063200EEB326 /* Cell */,
 				EE7D44BB282005E60081348C /* Distance.storyboard */,
 				EE7D44BD282005F00081348C /* DistanceViewController.swift */,
+				EE250C15282906D300EEB326 /* DistanceViewController + TableView.swift */,
+				EE250C2028290B9000EEB326 /* DistanceViewController + ViewDelegate.swift */,
 			);
 			path = Distance;
 			sourceTree = "<group>";
@@ -574,6 +624,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE250C1F28290A6900EEB326 /* DistanceDataManager.swift in Sources */,
+				EE250C1B2829086100EEB326 /* DistanceProtocol.swift in Sources */,
 				EE1570622824F4720045D487 /* WeatherDataManager.swift in Sources */,
 				EEF58536281BE17A00AA71D0 /* AddressWebViewController.swift in Sources */,
 				EE90B09C2817B08B005E9A2D /* LoginViewController.swift in Sources */,
@@ -582,6 +634,7 @@
 				EE90B09728168C01005E9A2D /* UIColor.swift in Sources */,
 				EE7C8F45281A603600CE498B /* HomeDistanceCell.swift in Sources */,
 				EE90B0A628193C12005E9A2D /* HomeViewController.swift in Sources */,
+				EE250C142829065600EEB326 /* DistanceInfoCell.swift in Sources */,
 				EEF58530281BD25C00AA71D0 /* SettingViewController.swift in Sources */,
 				EE1B0E38282121BB00DC5714 /* GetCoordResponse.swift in Sources */,
 				EE7C8F54281AD2AB00CE498B /* BaseViewController.swift in Sources */,
@@ -592,6 +645,7 @@
 				EEDD199328226FDF0071C6E7 /* DistanceManager.swift in Sources */,
 				EEDD198F282259080071C6E7 /* HomeViewController + ViewDelegate.swift in Sources */,
 				EEF5852A281BC4A000AA71D0 /* BasePopUpViewController.swift in Sources */,
+				EE250C16282906D300EEB326 /* DistanceViewController + TableView.swift in Sources */,
 				EE7C8F59281AD73B00CE498B /* DistanceInputPopUpViewController.swift in Sources */,
 				EE1570672824F84C0045D487 /* WeatherMainType.swift in Sources */,
 				EE1570642824F5150045D487 /* WeatherViewController + ViewDelegate.swift in Sources */,
@@ -604,7 +658,9 @@
 				EE15705E2824F36E0045D487 /* GetWeatherResponse.swift in Sources */,
 				EE7C8F47281A608B00CE498B /* HomeViewController + TableView.swift in Sources */,
 				EE7258002824205800241926 /* MapProtocol.swift in Sources */,
+				EE250C1D282908B400EEB326 /* GetPathResponse.swift in Sources */,
 				EE90B09228168B33005E9A2D /* UIViewController.swift.swift in Sources */,
+				EE250C2128290B9000EEB326 /* DistanceViewController + ViewDelegate.swift in Sources */,
 				EE7C8F49281A644900CE498B /* LoginNavigationController.swift in Sources */,
 				EE90B09528168BB6005E9A2D /* IndicatorView.swift in Sources */,
 				EE7D44B7282005910081348C /* WeatherViewController.swift in Sources */,

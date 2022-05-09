@@ -8,10 +8,15 @@
 import UIKit
 
 class DistanceViewController: UIViewController {
+    private lazy var dataManager: DistanceDelegate = DistanceDataManager()
+    var distances: [Int] = []
+    var times: [Int] = []
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        DistanceManager.shared.distances.forEach {
+            dataManager.getPathResponse(start: $0.x + "," + $0.y, end: (DistanceManager.shared.middleX ?? "") + "," + (DistanceManager.shared.middleY ?? ""), delegate: self)
+        }
     }
     
 
