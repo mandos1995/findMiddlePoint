@@ -9,25 +9,34 @@ import UIKit
 
 class DistanceViewController: UIViewController {
     private lazy var dataManager: DistanceDelegate = DistanceDataManager()
+    @IBOutlet weak var topBarCollectionView: UICollectionView!
+    
     var distances: [Int] = []
     var times: [Int] = []
-    @IBOutlet weak var tableView: UITableView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        DistanceManager.shared.distances.forEach {
-            dataManager.getPathResponse(start: $0.x + "," + $0.y, end: (DistanceManager.shared.middleX ?? "") + "," + (DistanceManager.shared.middleY ?? ""), delegate: self)
+    var page: Int = 0 {
+        didSet {
+            getDistanceInstance(index: page)
+            topBarCollectionView.reloadData()
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var startAddressLabel: UILabel!
+    @IBOutlet weak var middleAddressLabel: UILabel! {
+        didSet {
+            middleAddressLabel.text = DistanceManager.shared.middleAddress ?? ""
+        }
     }
-    */
-
+    @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        dataManager.getPathResponse(start: DistanceManager.shared.distances[0].x + "," + DistanceManager.shared.distances[0].y, end: (DistanceManager.shared.middleX ?? "") + "," + (DistanceManager.shared.middleY ?? "" ), delegate: self)
+        startAddressLabel.text = DistanceManager.shared.distances[0].address
+    }
+    
+    
+    func getDistanceInstance(index: Int) {
+        startAddressLabel.text = DistanceManager.shared.distances[index].address
+        dataManager.getPathResponse(start: DistanceManager.shared.distances[index].x + "," + DistanceManager.shared.distances[index].y, end: (DistanceManager.shared.middleX ?? "") + "," + (DistanceManager.shared.middleY ?? "" ), delegate: self)
+    }
 }
