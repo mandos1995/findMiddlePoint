@@ -29,6 +29,7 @@ class HomeViewController: BaseViewController {
     }
     @IBAction func addDistanceButtonTouchUpInside(_ sender: UIButton) {
         presentDistanceInputPopUp { name, address in
+            self.showIndicator()
             self.dataManager.getCoordResponse(name: name, address: address, delegate: self)
         }
     }

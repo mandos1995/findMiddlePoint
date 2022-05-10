@@ -9,6 +9,7 @@ import UIKit
 
 extension MapViewController: MapViewDelegate {
     func didSuccessGetReverseCoordResponse(_ response: Region) {
+        dismissIndicator()
         middleAddress = "\(response.area1.name) \(response.area2.name) \(response.area3.name)"
         DistanceManager.shared.middleAddress = middleAddress
         middlePointMarker.captionRequestedWidth = 70

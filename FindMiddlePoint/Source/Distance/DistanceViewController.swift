@@ -30,6 +30,7 @@ class DistanceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showIndicator()
         dataManager.getPathResponse(start: DistanceManager.shared.distances[0].x + "," + DistanceManager.shared.distances[0].y, end: (DistanceManager.shared.middleX ?? "") + "," + (DistanceManager.shared.middleY ?? "" ), delegate: self)
         startAddressLabel.text = DistanceManager.shared.distances[0].address
     }
@@ -37,6 +38,7 @@ class DistanceViewController: UIViewController {
     
     func getDistanceInstance(index: Int) {
         startAddressLabel.text = DistanceManager.shared.distances[index].address
+        showIndicator()
         dataManager.getPathResponse(start: DistanceManager.shared.distances[index].x + "," + DistanceManager.shared.distances[index].y, end: (DistanceManager.shared.middleX ?? "") + "," + (DistanceManager.shared.middleY ?? "" ), delegate: self)
     }
 }

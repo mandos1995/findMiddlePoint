@@ -9,6 +9,7 @@ import UIKit
 
 extension WeatherViewController: WeatherViewDelegate {
     func didSuccessGetWeatherResponse(_ response: GetWeatherResponse) {
+        dismissIndicator()
         temp = String(round((response.main.temp - 273.15) * 10) / 10)
         DistanceManager.shared.middleWeather = temp
         weatherType = WeatherMainType(weatherName: response.weather[0].main)

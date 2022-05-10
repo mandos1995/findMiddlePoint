@@ -24,6 +24,7 @@ class WeatherViewController: UIViewController {
         super.viewDidLoad()
         let y = Double(DistanceManager.shared.middleY ?? "") ?? 0
         let x = Double(DistanceManager.shared.middleX ?? "") ?? 0
+        showIndicator()
         dataManager.getWeatherResponse(y: y, x: x, delegate: self)
     }
     

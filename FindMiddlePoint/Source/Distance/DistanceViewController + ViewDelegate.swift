@@ -9,6 +9,7 @@ import UIKit
 
 extension DistanceViewController: DistanceViewDelegate {
     func didSuccessGetPathResponse(_ response: GetPathResponse) {
+        dismissIndicator()
         var distance = Double(response.route.traoptimal[0].summary.distance) / 1000
         distance = round(distance * 10) / 10
         distanceLabel.text = "거리 : \(distance)km"

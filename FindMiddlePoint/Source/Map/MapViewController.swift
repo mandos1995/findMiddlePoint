@@ -54,6 +54,7 @@ class MapViewController: BaseViewController {
         mapView.moveCamera(cameraUpdate)
         DistanceManager.shared.middleX = "\(middlePoint.0)"
         DistanceManager.shared.middleY = "\(middlePoint.1)"
+        showIndicator()
         dataManager.getReverseCoordResponse(x: "\(middlePoint.0)", y: "\(middlePoint.1)", delegate: self)
     }
     

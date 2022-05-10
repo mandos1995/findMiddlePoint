@@ -18,4 +18,13 @@ extension UIViewController {
     @objc func dismissKeyboard() {
         self.view.endEditing(false)
     }
+    
+    func showIndicator() {
+        IndicatorView.shared.show()
+        IndicatorView.shared.showIndicator()
+    }
+    
+    @objc func dismissIndicator() {
+        IndicatorView.shared.dismiss()
+    }
 }
