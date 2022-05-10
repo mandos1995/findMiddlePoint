@@ -28,6 +28,9 @@ class WeatherViewController: UIViewController {
         dataManager.getWeatherResponse(y: y, x: x, delegate: self)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.title = "날씨"
+    }
 
     /*
     // MARK: - Navigation

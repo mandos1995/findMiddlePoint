@@ -41,4 +41,8 @@ class DistanceViewController: UIViewController {
         showIndicator()
         dataManager.getPathResponse(start: DistanceManager.shared.distances[index].x + "," + DistanceManager.shared.distances[index].y, end: (DistanceManager.shared.middleX ?? "") + "," + (DistanceManager.shared.middleY ?? "" ), delegate: self)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.title = "거리"
+    }
 }

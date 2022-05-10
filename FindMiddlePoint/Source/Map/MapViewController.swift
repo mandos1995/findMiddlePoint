@@ -19,6 +19,9 @@ class MapViewController: BaseViewController {
         drawMarker()
         drawLine()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.title = "지도"
+    }
     
     func getMiddlePoint() -> (Double, Double){
         var x: Double = 0
